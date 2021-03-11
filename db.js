@@ -58,8 +58,11 @@ function executeQuery(sql, aa){
     })
 }
 
+
+//  fetch() getting only selected fields for test
+
 function fetchData(response){
-    executeQuery("select * from collecteddata", function(result){
+    executeQuery("select 'domain_id', 'top_level_domain', 'webmaster_email', 'contacted_by', 'date_of_contact', 'domain_language' from collecteddata", function(result){
         console.log(result);
         response.write('<table><tr>');
         for (var column in result[0]){
