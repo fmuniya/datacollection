@@ -20,6 +20,7 @@
 //  })
 
 // #############     NEW CONNECTION      #####################
+// use import format
 
 var mysql = require('mysql');
 var express = require('express')
