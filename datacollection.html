@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Domain Data Collection | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>Domain Data Collection</header>
+
+                                                  <!-- #############################  Progress Bar ########################################-->
+      <div class="progress-bar">
+        <div class="step">
+          <p>Domain</p>
+          <div class="bullet">
+            <span>1</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+          <p>Links</p>
+          <div class="bullet">
+            <span>2</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+          <p>Casino</p>
+          <div class="bullet">
+            <span>3</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+        <div class="step">
+          <p>Details</p>
+          <div class="bullet">
+            <span>4</span>
+          </div>
+          <div class="check fas fa-check"></div>
+        </div>
+      </div>
+      <div class="form-outer">
+        <form action="#">
+          <div class="page slide-page">
+
+                                                    <!-- ##############################  1ST FORM  #################################### -->
+
+            <div class="title">Domain Info:</div>
+
+            <div class="field">
+              <div class="label">Domain URL</div>
+              <input type="text" placeholder="Enter Domain URL..">
+            </div>
+
+            <div class="field">
+              <div class="label">Top Level Domain</div>
+              <input type="text" placeholder="Enter Top Level Domain..">
+            </div>
+
+            <div class="field">
+              <div class="label">Pos 1 Regional Traffic</div>
+              <input type="text" placeholder="Enter Pos 1 Regional Traffic..">
+            </div>
+
+            <div class="field">
+              <div class="label">Pos 2 Regional Traffic</div>
+              <input type="text" placeholder="Enter Pos 2 Regional Traffic..">
+            </div>
+
+            <div class="field">
+              <div class="label">Webmaster Email</div>
+              <input type="text" placeholder="Enter Webmaster's Email..">
+            </div>
+
+            <div class="field">
+              <div class="label">Domain Language</div>
+                <select id="domlanguage" name="domainlanguage">
+                      
+                  <option value="Arabic">ARABIC</option>
+                  <option value="DANISH">DANISH</option>
+                  <option value="Dutch">DUTCH</option>
+                  <option value="English">ENGLISH</option>
+                  <option value="Finish">FINISH</option>
+                  <option value="French">FRENCH</option>
+                  <option value="German">GERMAN</option>
+                  <option value="Italian">ITALIAN</option>
+                  <option value="Norwegian">NORWEGIAN</option>
+                  <option value="Portuguese">PORTUGUESE</option>
+                  <option value="Spanish">SPANISH</option>
+                  <option value="Swedish">SWEDISH</option>
+                  <option value="Russian">RUSSIAN</option>
+                  
+                  </select>
+            </div>
+
+            <div class="field">
+              <div class="label">Contacted By</div>
+                <select id="contact" name="contacted">
+                  <option value="Anouk">Anouk</option> 
+                  <option value="Hilal">Hilal</option>
+                  <option value="Chenegtai">chengetai</option>
+                  <option value="Mitchell">Mitchell</option>
+                  <option value="Mirela">Mirela</option>
+                  <option value="Stanley">Stanley</option>
+                  <option value="Cecilia">Cecilia</option>
+                  <option value="Zvataida">Zvataida</option>
+                  <option value="Partson">Partson</option>
+              
+              </select>
+            </div>
+
+            <div class="field">
+              <div class="label">Date Of Contact</div>
+              <input type="date" id="datepick" name="datepick">
+            </div>
+
+            <div class="field">
+              <button class="firstNext next">Next</button>
+            </div>
+          </div>
+                                            <!-- ##############################  2ND FORM  #################################### -->
+          <div class="page">
+            <div class="title">LINKS DETAILS:</div>
+            <div class="field">
+              <div class="label">Price Currency</div>
+              <select id="pricecurrency" name="pricecurrency">
+                    
+                <option value="EUR">EUR</option>
+                <option value="USD">USD</option>
+                <option value="GBP">GBP</option>
+                <option value="CHF">CHF</option>
+                <option value="ZAR">ZAR</option>
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="SEK">SEK</option>
+                <option value="CFA">CFA</option>
+                <option value="NGN">NGN</option>
+                <option value="POA">POA</option>
+                
+                
+                </select>
+            </div>
+
+            <div class="field">
+              <div class="label">Link Price</div>
+              <input type="text" id="linkprice" name="linkprice" placeholder="Enter Link Price ..">
+            </div>
+
+            <div class="field">
+              <div class="label">Link Price Including Content</div>
+              <input type="text" id="lprice_inc_cont" name="lprice_inc_cont" placeholder="Enter Link Price Including Content ..">
+            </div>
+
+            <div class="field">
+              <div class="label">Link Price Comment</div>
+              <input type="text" id="Link_price_comment" name="Link_price_comment" placeholder="Enter Link Price comment ..">
+            </div>
+
+            <div class="field">
+              <div class="label">Link Discount</div>
+              <input type="text" id="link_discount" name="link_discount" placeholder="Enter Link Discount ..">
+            </div>
+
+            <div class="field">
+              <div class="label">Link Is Do Follow</div>
+              <input type="text" id="Link_is_do_follow" name="Link_is_do_follow">
+            </div>
+
+            <div class="field">
+              <div class="label">Link Mark Sponsored</div>
+              <input type="text" id="Link_mark_sponsored" name="Link_mark_sponsored">
+            </div>
+
+            <div class="field">
+              <div class="label">Link Is Permanent</div>
+              <select id="Link_is_permanent" name="Link_is_permanent">
+                <option value="1">YES</option> 
+                <option value="0">NO</option>
+                <option value="NULL">NULL</option>
+                                
+            </select>
+            </div>
+
+            <div class="field">
+              <div class="label">LinkD Duration In Months</div>
+              <select id="Link_duration_months" name="Link_duration_months">
+                <option value="0.25">I Week</option>
+                <option value="0.5">2 Weeks</option>
+                <option value="1">1 Month</option>
+                <option value="3">3 Months</option>
+                <option value="6">6 Months</option>
+                <option value="12">1 Year</option>
+                <option value="24">2 Years</option>
+                <option value="36">3 Years</option>
+                <option value="99">8 Years</option>
+                <option value="NULL">NULL</option>
+                                
+            </select>
+            </div>
+
+            <div class="field">
+              <div class="label">Link Guidelines</div>
+              <input type="text" id="Link_guidelines" name="Link_guidelines">
+            </div>
+
+            <div class="field">
+              <div class="label">Link Disclaimer</div>
+              <input type="text" id="Price_for_link_existing_post" name="Price_for_link_existing_post" placeholder="Enter Price For Link Existing Post..">
+            </div>
+
+            <div class="field">
+              <div class="label">Date of Contact</div>
+              <input type="date" id="datepick" name="datepick">
+            </div>
+              
+
+            <div class="field btns">
+              <button class="prev-1 prev">Previous</button>
+              <button class="next-1 next">Next</button>
+            </div>
+          </div>
+                                                    <!-- ################################## 3RD FORM  ########################################## -->
+          <div class="page">
+            <div class="title">Casino:</div>
+
+            <div class="field">
+              <div class="label">Casino Link Accepted</div>
+              <select id="Casino_link_acceptedt" name="Casino_link_accepted">
+                <option value="1">YES</option> 
+                <option value="0">NO</option>
+                <option value="NULL">NULL</option>
+                                
+              </select>
+            </div>
+
+            <div class="field btns">
+              <button class="prev-2 prev">Previous</button>
+              <button class="next-2 next">Next</button> 
+            </div>
+
+          </div>
+                                                  <!-- ##############################  4TH FORM  #################################### -->
+
+          <div class="page">
+            <div class="title">Casino:</div>
+
+            <div class="field">
+              <div class="label">Casino Link Price</div>
+              <input type="text" id="Casino_link_price" name="Casino_link_price" placeholder="Enter Casino Link Price..">
+            </div>
+            
+            <div class="field">
+              <div class="label">Casino Link Price Comment</div>
+              <input type="text" id="Casino_link_price_comment" name="Casino_link_price_comment" placeholder="Enter Casino Link Price Comment..">
+            </div>
+            
+            <div class="field">
+              <div class="label">Casino Link Guidelines</div>
+              <input type="text" id="Casino_link_guidelines" name="Casino_link_guidelines" placeholder="Enter Casino Link Guidelines..">
+            </div>
+            
+            <div class="field btns">
+              <button class="prev-3 prev">Previous</button>
+              <button class="next-3 next">Next</button>
+            </div>
+
+          </div>
+
+
+
+                                                   <!-- ##############################  5TH FORM  #################################### -->
+          <div class="page">
+            <div class="title">Forex and Crypto-currency:</div>
+
+            <div class="field">
+              <div class="label">FC Link Accepted</div>
+              <select id="fc_link_accepted" name="fc_link_accepted">
+                <option value="1">YES</option> 
+                <option value="0">NO</option>
+                <option value="NULL">NULL</option>
+                                
+              </select>
+            </div>
+
+            <div class="field btns">
+              <button class="prev-4 prev">Previous</button>
+              <button class="next-4 next">Next</button>
+              <!-- <button class="submit">Submit</button> -->
+            </div>
+          </div>
+
+                                                     <!-- ##############################  5TH FORM  #################################### -->
+          <div class="page">
+            <div class="title">Forex and Crypto-currency:</div>
+
+            <div class="field">
+              <div class="label">FC Link Accepted</div>
+              <select id="fc_link_accepted" name="fc_link_accepted">
+                <option value="1">YES</option> 
+                <option value="0">NO</option>
+                <option value="NULL">NULL</option>
+                                
+              </select>
+              </div>
+            
+
+            <div class="field btns">
+              <button class="prev-5 prev">Previous</button>
+              <button class="next-5 next">Next</button>
+              <!-- <button class="submit">Submit</button> -->
+            </div>
+          </div>
+
+                                           <!-- ##############################  6TH FORM  #################################### -->
+            <div class="page">
+                <div class="title">Forex and Crypto-currency Options:</div>
+                                
+                <div class="field">
+                  <div class="field">
+                    <div class="label">FC Link Price</div>
+                    <input type="text" id="fc_link_price" name="fc_link_price" placeholder="Enter FC Link Price..">
+                  </div>
+                </div>
+
+                <div class="field">
+                  <div class="field">
+                    <div class="label">FC Link Price Comment</div>
+                    <input type="text" id="fc_link_price" name="fc_link_price" placeholder="Enter FC Link Price Commen..">
+                  </div>
+                </div>
+
+                <div class="field">
+                  <div class="field">
+                    <div class="label">FC Link Guidelines</div>
+                    <input type="text" id="fc_link_guidelines" name="fc_link_guidelines" placeholder="Enter FC Link Price guidelines..">
+                  </div>
+                </div>
+             
+                <div class="field btns">
+                  <button class="prev-6 prev">Previous</button>
+                  <button class="next-6 next">Next</button>
+                      <!-- <button class="submit">Submit</button> -->
+                </div>
+
+              </div>   
+              
+                                                           <!-- ##############################  7TH FORM  #################################### -->
+          <div class="page">
+            <div class="title">CBD</div>
+
+            <div class="field">
+              <div class="label">CBD Link Accepted</div>
+              <select id="cbd_link_accepted" name="cbd_link_accepted">
+                <option value="1">YES</option> 
+                <option value="0">NO</option>
+                <option value="NULL">NULL</option>
+                                
+              </select>
+            </div>
+
+            <div class="field btns">
+              <button class="prev-7 prev">Previous</button>
+              <button class="next-7 next">Next</button>
+              <!-- <button class="submit">Submit</button> -->
+            </div>
+
+          </div>
+                                                            <!-- ##############################  8TH FORM  #################################### -->
+          <div class="page">
+            <div class="title">CBD Options:</div>
+                            
+            <div class="field">
+              <div class="field">
+                <div class="label">CBD Link Price</div>
+                <input type="text" id="cbd_link_price" name="cbd_link_price" placeholder="Enter CBD Link Price..">
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="field">
+                <div class="label">CBD Link Price Comment</div>
+                <input type="text" id="cbd_link_price" name="cbd_link_price" placeholder="Enter CBD Link Price Commen..">
+              </div>
+            </div>
+
+            <div class="field">
+              <div class="field">
+                <div class="label">CBD Link Guidelines</div>
+                <input type="text" id="fc_link_guidelines" name="fc_link_guidelines" placeholder="Enter FC Link Price guidelines..">
+              </div>
+            </div>
+         
+            <div class="field btns">
+              <button class="prev-8 prev">Previous</button>
+              <button class="next-8 next">Next</button>
+                  <!-- <button class="submit">Submit</button> -->
+            </div>
+
+          </div>  
+
+                                                           <!-- ##############################  7TH FORM  #################################### -->
+          <div class="page">
+            <div class="title">CBD</div>
+
+            <div class="field">
+              <div class="label">CBD Link Accepted</div>
+              <select id="cbd_link_accepted" name="cbd_link_accepted">
+                <option value="1">YES</option> 
+                <option value="0">NO</option>
+                <option value="NULL">NULL</option>
+                                
+              </select>
+            </div>
+
+            <div class="field btns">
+              <button class="prev-9 prev">Previous</button>
+              <button class="next-9 next">Next</button>
+              <!-- <button class="submit">Submit</button> -->
+            </div>
+
+          </div>
+                                                 <!-- ##############################  8TH FORM  #################################### -->
+          <div class="page">
+            <div class="title">CBD</div>
+
+            <div class="field">
+              <div class="label">CBD Link Accepted</div>
+              <select id="cbd_link_accepted" name="cbd_link_accepted">
+                <option value="1">YES</option> 
+                <option value="0">NO</option>
+                <option value="NULL">NULL</option>
+                                
+              </select>
+            </div>
+
+            <div class="field btns">
+              <button class="prev-10 prev">Previous</button>
+              <button class="next-10 next">Next</button>
+              <!-- <button class="submit">Submit</button> -->
+            </div>
+
+          </div>
+
+                                                 <!-- ##############################  9th FORM  #################################### -->  
+
+          <div class="page">
+            <div class="title">Submission</div>
+
+            <div class="field">
+              <div class="label">Submitted By</div>
+              <select id="submitted_by" name="submitted_by">
+                <option value="Anouk">Anouk</option> 
+                  <option value="Hilal">Hilal</option>
+                  <option value="Chenegtai">chengetai</option>
+                  <option value="Mitchell">Mitchell</option>
+                  <option value="Sipho">Sipho</option>
+                  <option value="Stanley">Stanley</option>
+                  <option value="Cecilia">Cecilia</option>
+                  <option value="Zvataida">Zvataida</option>
+                  <option value="Tinashe">Tinashe</option>
+                  <option value="Suzette">Suzette</option>
+                                
+              </select>
+            </div>
+
+            <div class="field btns">
+              <button class="prev-11 prev">Previous</button>
+              <button class="submit">Submit</button>
+            </div>
+
+
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+
+  </body>
+</html>
