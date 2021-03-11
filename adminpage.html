@@ -15,7 +15,7 @@
 <body>
 
     <div class="conatiner mb-3 mt-3">
-        <table class="table table-striped table-bordered mydatatable" style="width: 100%">
+        <table class="table table-striped table-bordered mydatatable" id="btTable" style="width: 100%">
             <thead>
                 <tr>
                     <th>Domain Name</th>
@@ -118,6 +118,13 @@
                 if (that.search() !== this.value ) {
                     that.search( this.value ).draw();
                 }
+            });
+        });
+
+
+        $(document).ready(function(){
+            $('btTable').DataTable({
+                "ajax":'http://localhost:8080'
             });
         });
 
