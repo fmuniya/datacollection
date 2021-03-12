@@ -486,31 +486,7 @@
       </div>
     </div>
     <script src="script.js"></script>
-    <script>
-      let datacoll = [];
-      const adddatacoll = (ev)=>{
-        ev.preventDatafault();
-        let domdata = {
-          domain_url: document.getElementById('domain_url').value,
-          top_level_domain: document.getElementById('top_level_domain').value,
-          webmaster_email: document.getElementById('webmaster_email').value,
-          contacted_by: document.getElementById('contact').value,
-          date_contacted: document.getElementById('datepick').value,
-          domain_lang: document.getElementById('domlanguage').value,
-        }
-
-        datacoll.push(domdata);
-        document.forms[0].reset(); //clear form for new additions
-        
-        console.warn('added' , {datacoll} );
-        let pre = document.querySelector('#msg pre');
-        pre.textContent = '\n' + JSON.stringify(datacoll, '\t', 2);
-      }
-
-      document.addEventListener('DOMContentLoaded', ()=>{
-      document.getElementById('sbmt').addEventListener('click', adddatacoll )
-      })
-    </script>
+    
 
   </body>
 </html>
