@@ -495,13 +495,15 @@
           top_level_domain: document.getElementById('top_level_domain').value,
           webmaster_email: document.getElementById('webmaster_email').value,
           contacted_by: document.getElementById('contact').value,
+          date_contacted: document.getElementById('datepick').value,
+          domain_lang: document.getElementById('domlanguage').value,
 
 
         }
       }
 
       document.addEventListener('DOMContentLoaded', ()=>{
-        document.getElementById('sbmt').addEventListener('click')
+      document.getElementById('sbmt').addEventListener('click', adddatacoll )
       })
     </script>
 
