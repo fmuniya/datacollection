@@ -7,6 +7,17 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
   <body>
+
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="datacollection.html">Domain Data Collection</a></li>
+        <li><a href="adminpage.html">Administrator</a></li>
+        <li><a href="search.html">Search</a></li>
+        
+          </ul>
+    </nav>
+    
     <div class="container">
       <header>Domain Data Collection</header>
 
@@ -51,12 +62,12 @@
 
             <div class="field">
               <div class="label">Domain URL</div>
-              <input type="text" placeholder="Enter Domain URL..">
+              <input type="text" id="domain_url" placeholder="Enter Domain URL..">
             </div>
 
             <div class="field">
               <div class="label">Top Level Domain</div>
-              <input type="text" placeholder="Enter Top Level Domain..">
+              <input type="text" id="top_level_domain" placeholder="Enter Top Level Domain..">
             </div>
 
             <div class="field">
@@ -71,7 +82,7 @@
 
             <div class="field">
               <div class="label">Webmaster Email</div>
-              <input type="text" placeholder="Enter Webmaster's Email..">
+              <input type="text" id="webmaster_email" placeholder="Enter Webmaster's Email..">
             </div>
 
             <div class="field">
@@ -467,7 +478,7 @@
 
             <div class="field btns">
               <button class="prev-11 prev">Previous</button>
-              <button class="submit">Submit</button>
+              <button class="submit" id="sbmt">Submit</button>
             </div>
 
 
@@ -475,6 +486,24 @@
       </div>
     </div>
     <script src="script.js"></script>
+    <script>
+      let datacoll = [];
+      const adddatacoll = (ev)=>{
+        ev.preventDatafault();
+        let domdata = {
+          domain_url: document.getElementById('domain_url').value,
+          top_level_domain: document.getElementById('top_level_domain').value,
+          webmaster_email: document.getElementById('webmaster_email').value,
+          contacted_by: document.getElementById('contact').value,
+
+
+        }
+      }
+
+      document.addEventListener('DOMContentLoaded', ()=>{
+        document.getElementById('sbmt').addEventListener('click')
+      })
+    </script>
 
   </body>
 </html>
